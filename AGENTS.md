@@ -66,3 +66,12 @@ Inspired by Preply and Booksy. Built with Next.js, TypeScript, React, PostgreSQL
 ### Verification
 - After making changes: run lint and tests; fix all errors before finishing
 - Do not skip failing checks — investigate and fix the root cause
+
+<!-- discovery:routing-start -->
+### Product discovery routing
+
+When the task involves product discovery, writing a brief, or reviewing the backlog:
+- Read `.ai/specs/product-brief.md` and `.ai/specs/research/` first
+- Non-goals, business rules, and decisions in the brief are a protected contract — do not build what a non-goal excludes without an owner-approved update to the brief
+- Synthetic personas from `om-synthetic-users` are hypotheses, not validated research
+<!-- discovery:routing-end -->

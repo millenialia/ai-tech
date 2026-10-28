@@ -1,9 +1,33 @@
 # SDLC — DevMentor
 
+<!-- discovery:start -->
+## Roles
+
+- **Product owner** — decides what gets built and why; owns non-goals, business rules, and decisions in the product brief. On this project that is you.
+
+## Discovery stage
+
+Before a feature becomes a ticket it goes through discovery: a product brief is written or updated in `.ai/specs/product-brief.md` using `/om-discover`. The brief captures the problem, user needs, non-goals, business rules, and decisions.
+
+A ticket may only enter implementation when it satisfies the **Definition of Ready** below.
+
+## Definition of Ready
+
+An issue is ready to implement when it has:
+- A clear description of the problem or feature
+- Acceptance criteria
+- A linked spec (for features) in `.ai/specs/`
+- Does not contradict a non-goal or active decision in `product-brief.md`
+
+## Product decisions as a protected contract
+
+Non-goals, business rules, and decisions recorded in `.ai/specs/product-brief.md` are a protected contract. A code change that builds what a non-goal excludes, or contradicts an active rule or decision, is a **blocker** in code review — the only accepted fix is an explicit, owner-approved update to the brief.
+<!-- discovery:end -->
+
 ## Workflow overview
 
 ```
-Issue (backlog) → in-progress → PR (review) → qa → merge-queue → merged
+Discovery (brief) → Issue (backlog) → in-progress → PR (review) → qa → merge-queue → merged
 ```
 
 ## Issue lifecycle
